@@ -12,7 +12,6 @@
 
 
 2. Github를 이용한 포트폴리오
-3. 
 
 ---
 
@@ -62,12 +61,11 @@
 
 * Working directory와 Staging Area에 있는 파일들의 현재 상태를 확인
 * 상태
-
- 	1. `untracked` : git이 관리하지 않는 파일
- 	2. `tracked` : git이 관리하는 파일
-     1) `Unmodified` : 최신 상태
-     2) `Modified` : 수정되었지만 staging area에 반영되기 전
-     3) `staged` : Staging area에 반영된 상태
+    		1. `untracked` : git이 관리하지 않는 파일
+        		2. `tracked` : git이 관리하는 파일
+         1. `Unmodified` : 최신 상태
+         2. `Modified` : 수정되었지만 commit을 남기기 전(staging area에 반영되기 전)
+         3. `staged` : Staging area에 반영된 상태
 
 
 
@@ -120,7 +118,3 @@ $ git add .
   * `--graph` : 브랜치(branch)와 머지(merge) 내역을 그래프로 보여주는 명령어
   * `--all` : 모든 브랜치의 내역
   * `--reverse` : 커밋 내역의 순서를 반대로 보여주는 명령어
-  * 
-
-
-
