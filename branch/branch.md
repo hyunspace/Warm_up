@@ -56,3 +56,8 @@ $ git merge dev
 * master와 dev를 합쳐서 새로운 버전 만드는 것 X
 * 이전 버전에 있던 master를 fast forward(빨리 감기)를 통해 옮겨오는 것
 
+
+
+2. master에서 commit, dev에서도 commit 후 merge
+
+   ![bandicam 2022-01-13 16-53-55-624](branch.assets/bandicam 2022-01-13 16-53-55-624.jpg)
