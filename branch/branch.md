@@ -42,3 +42,17 @@ $ git switch -c {새로 생성하고 이동할 브랜치 이름}
 - **주의사항**
 
   git switch 하기 전에 commit 하셨나요?
+
+
+
+### git merge branch
+
+* master에 없는, dev에만 있는 파일 dev.txt를 가지고 오려고 할 때! >> **master에서 dev의 파일을 가져와야 함**
+
+```bash
+$ git merge dev
+```
+
+* master와 dev를 합쳐서 새로운 버전 만드는 것 X
+* 이전 버전에 있던 master를 fast forward(빨리 감기)를 통해 옮겨오는 것
+
