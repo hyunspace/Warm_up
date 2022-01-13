@@ -37,6 +37,56 @@ $ git push -u origin master
 
 
 
-새로운 내용을 추가했다욥
+### gitignore
 
-ㅇ라
+* git에서 관리하지 않는 파일을 만들어 보자
+
+  ```bash
+  $ touch .gitignore
+  ```
+
+* `gitignore.io` 사이트에서 파일 만들기
+
+  * 파일은 `.git  ` 폴더가 있는 최 상단 폴더 안에
+
+* **프로젝트를 시작할 때**, 가장 처음에 만들어서 git에게 tracking 되지 않게 하자
+
+
+
+1. 원격 저장소와 로컬 저장소 모두 존재 + 이미 트래킹 중인 파일을 로컬에서만 더 이상 추적하지 않도록 설정
+
+   ```bash
+   $ git update-index --assume-unchaged {file name}
+   # 자주 안 씀
+   ```
+
+   
+
+2. 로컬에 있는 파일 변동 추적 멈춤
+
+* 원격 저장소에 이미 해당 파일이 있다면, push 할 때 그 파일을 삭제
+
+  ```bash
+  $ git rm --cached {file name}
+  ```
+
+  * 파일 변동 추적만 중지. 파일이 로컬에서 삭제 되는 것은 아님.
+  * 이후 push 해야 원격 저장소에서 파일이 삭제되는 것
+
+
+
+3. 로컬과 원격 저장소 모두 파일 삭제 후 추적 중지
+
+   ```bash
+   $ git rm {file name}
+   ```
+
+
+
+### clone
+
+```bash
+$ git clone (가져 오려는 A의 github url)
+# 현재 내 로컬에 A가 없을 떄
+```
+
