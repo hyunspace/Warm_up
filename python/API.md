@@ -46,3 +46,8 @@ response = requests.get(url).json()
 
 ```
 
+
+
+
+
+https://www.metaweather.com/api/#locationsearch

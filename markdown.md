@@ -96,13 +96,11 @@ for i in range(10):
 * `대체 택스트`란 , 이미지가 정상적으로 로딩되지 않았을 때 표시 되는 문구.
 * typora에는 이미지를 드래그 앤 드랍만으로도 적용시킬 수 있다.
 
-![logo](C:\스타트캠프\싸피드라마\logo.png)
-
 #### 주의사항
 
 1. 이미지 업로드 전 저장하기
 
-![logo](markdown.assets/logo.png)
+![logo](markdown.assets/20210622_104457.jpg)
 
 
 
