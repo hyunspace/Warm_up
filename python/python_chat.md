@@ -4,6 +4,7 @@
 
 * `=` : 할당한다
 * `==` : 같다
+* `ctrl + /` == 내가 지정한 영역 주석 처리
 
 
 
@@ -148,7 +149,149 @@
     print('{} 따옴표로 감싸서 사용한다.'.format(dust))
     ```
 
+
+
+
+3.  반복
+
+* While
+
+  * ~ 하는 동안
+  * 조건을 함께 제시
+
+  * while에 해당하는 조건이 종료 될 때까지 **계속** 반복
+
+  * **종료 조건이 반드시 필요**
+
+    ```python
+    while True:
+        print('계속해주세요.')
+    ```
+
+    ```python
+    n = 0
+    while n < 3:
+        print('출력')
+        n = n + 1
+    ```
+
+    [결과]
+
+    ```python
+    출력
+    출력
+    출력
+    ```
+
+  
+
+* for 
+
+  * 정해진 박스내에서의 반복시 사용
+  * 가지고 있는 모든 것을 꺼낸다
+
+  * for 변수명 in 범위
+
+    ```python
+    dust = [59, 24, 102]
+    for i in dust:
+        print(i)
+    ```
+
+    [결과]
+
+    ```python
+    59
+    24
+    102
+    ```
+
     
 
+* 실습
 
+  * while
+
+    ```python
+    count = 0
+    while count <4:
+        # 조건을 만족하는 동안
+        # 아래 코드 실행
+        count = count + 1
+        print(greeting)
+    ```
+
+    (참고)
+
+    ```python
+    count = 0
+    while count <4:
+        print(greeting)
+    # 종료 조건이 없으므로 계속 출력
+    ```
+
+  * for
+
+    ```python
+    # 정해진 범위 안에서 반복 실행
+    # 범위는... 어디서 구하지?
+    for i in range(4):
+        print(greeting)
+    ```
+
+
+
+
+
+## Python 함수
+
+1. Built-in Functions
+2. Non-built-in-Functions
+
+
+
+### python 내장함수
+
+* import 는 해당 라인 이후로 활용할 코드를 가져오는 것이므로 
+  **항상 최 상단에 작성**하도록 한다.
+* 코드를 쓰다가 필요할 때 import!
+
+
+
+1. Python Module - random
+
+* 실습6 : random 모듈 활용
+
+  * ramdom.choice
+
+    ```python
+    #1. 함수가 포함된 코드를 불러온다
+    import random
+    
+    #2. 점심 메뉴 리스트를 만든다
+    menu = ['맥도날드', '버거킹', '쉑쉑']
+    ```
+
+    
+
+* 실습7 : random + 리스트
+
+  * ramdon.sampe(리스트, 개수)
+
+  * 리스트에서 특정 수의 요소를 임의적(ramdomly)으로 비복원추출(sample
+
+    ```python
+    # 1~45 중에 6개만 뽑아서 리스트에 담아서 출력
+    # random 불러오기
+    import random
+    
+    # 1~45 숫자 범위 만들기
+    # range(시작값, 끝나는 지점(미포함), [step])
+    # 리스트로 만들기 list()
+    numbers = list(range(1,46))
+    
+    # 비복원 추출로 6개 뽑기
+    lotto = random.sample(numbers, 6)
+    print(lotto)
+    ```
 
