@@ -143,3 +143,8 @@ $ mv {이동시킬 파일(폴더)} {이동할 폴더}
 $ mv {변경시킬 파일(폴더)} {변경할 이름}
 ```
 
+
+
+![df](CLI.assets/df.png)
+
+![df2](CLI.assets/df2.png)
