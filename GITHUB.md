@@ -37,6 +37,30 @@ $ git push -u origin master
 
 
 
+#### staging Area(.git) / N times
+
+* `git remote` : remote 별명 확인
+* `git remote -v` : remote 주소 확인
+* `git add .` : `.` = all
+* `git add file_name.type` : 특정 파일만 올려
+* `git status` : `add` 잘 됐는지 확인
+* `git commit -m 'commit message'` 
+* `git log --oneline`
+* `git push`
+* `git config --global core.autocrlftrue` : LF 어쩌고 나오면
+  * warning: LF will be replaced by CRLF in README.md.
+    The file will have its original line endings in your working directory
+
+
+
+#### pull/clone
+
+* `git clone <git url>`
+* `git pull origin master`
+* 
+
+
+
 ### gitignore
 
 * git에서 관리하지 않는 파일을 만들어 보자
