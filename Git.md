@@ -15,7 +15,7 @@
 
 ---
 
-
+<br/>
 
 ## 초기 설정
 
@@ -45,7 +45,8 @@
    $ git init
    ```
 
-   
+
+<br/>
 
 ## git init
 
@@ -55,7 +56,7 @@
 
 * 이미 master로 관리 중인 폴더 내에서 **절대 절대 절대 git init 금지**
 
-
+<br/>
 
 ## git status
 
@@ -67,7 +68,7 @@
          2. `Modified` : 수정되었지만 commit을 남기기 전(staging area에 반영되기 전)
          3. `staged` : Staging area에 반영된 상태
 
-
+<br/>
 
 ## git add
 
@@ -82,7 +83,7 @@ $ git add folder/
 $ git add .
 ```
 
-
+<br/>
 
 ## git commit
 
@@ -105,7 +106,7 @@ $ git add .
 
 ​		`1 file changed, ~ ` : 변경 사항
 
-
+<br/>
 
 ## git log
 
@@ -118,3 +119,29 @@ $ git add .
   * `--graph` : 브랜치(branch)와 머지(merge) 내역을 그래프로 보여주는 명령어
   * `--all` : 모든 브랜치의 내역
   * `--reverse` : 커밋 내역의 순서를 반대로 보여주는 명령어
+
+<br/>
+
+## branch
+
+### git branch
+
+* 브랜치 목록 확인
+
+### gir branch {branch_name}
+
+* 새로운 브랜치 생성
+* {} 빼고 이름만 쓰면 됨
+
+### git branch -d {branch_name}
+
+* 특정 브랜치 삭제
+
+### git switch {branch_name}
+
+* 다른 브랜치로 이동
+
+### git swich -c {branch_name}
+
+* 생성과 동시에 이동
+
